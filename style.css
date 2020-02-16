@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    
+}
+
+main>div{
+    display: flex;
+height: auto;
+}
+main div>div{
+    max-height: 250px;
+}
+.can_sav_back_frw{
+    width: 100%;
+    justify-content: center;
+}
+
+.can_sav_back_frw div{
+    width: 20%;
+    margin: 0 5px;
+    background-blend-mode: darken;
+    background-size: 300px;
+}
+
+.can_sav_back_frw:hover div:not(:hover){
+    width: 40%;
+    height: 80%;
+}
+.can_sav_back_frw:hover div:hover{
+    width: 60%;
+}
+
+/* =======================================*/
+
+.middle{
+    width: 100%;
+    height: auto;
+}
+.middle div{
+    width: 18%;
+    height: 100%;
+    margin: 0 5px; 
+}
+.middle:hover div:not(:hover){
+    width: 40%;
+    height: 80%;
+}
+.middle:hover div:hover{
+    width: 60%;
+}
+
+/*========================================*/
+
+.bottom{
+    width: 70%;
+    justify-content: center;
+}
+.bottom div{
+    width: 20%;
+    height: 100%;
+    margin: 0 10px; 
+}
+.bottom:hover div:not(:hover){
+    width: 40%;
+    height: 80%;
+}
+.bottom:hover div:hover{
+    width: 60%;
+}
+
+/* ====================================== */
+img{
+    width: 90%;
+    height: 90%;
+}
+img:hover{
+    padding: 10px;
+}
+main:hover img:not(:hover){
+    opacity: 0.3;
+
+}
